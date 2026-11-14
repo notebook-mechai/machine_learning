@@ -1,0 +1,21 @@
+--- graphics card info on ubuntu
+> sudo lspci | grep -E "VGA|3D"
+> sudo lshw -C display
+
+
+--- check driver in use
+> sudo lspci -k | grep -A 3 -E "VGA|3D"
+
+
+--- install cuda-toolkit
+sudo apt install nvidia-cuda-toolkit
+
+
+--- check cuda version
+> nvcc --version
+
+> nvidia-smi
+> sudo apt install nvidia-utils-580
+> sudo apt install nvidia-utils-580-server
+
+

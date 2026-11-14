@@ -1,0 +1,51 @@
+# install conda on linux
+
+https://docs.conda.io/en/latest/miniconda.html
+
+> wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh
+> bash Miniconda3-latest-Linux-x86_64.sh
+
+=======================================================================
+# All commands conda
+https://docs.conda.io/projects/conda/en/stable/commands/index.html
+https://repo.anaconda.com/miniconda/
+=======================================================================
+# check version of conda
+conda --version
+
+# update conda
+conda update conda
+
+# create enviroment with any version python 
+conda create -n myenv python=3.9
+
+# active enviroment
+conda activate myenv
+
+# deactivate enviroment
+conda deactivate
+
+# listing enviroments
+conda info --envs
+
+# way_01: install packeage
+conda install numpy
+
+# way_02: install packeage
+pip install requests
+
+# show all enviroment 
+conda env list
+
+# delete enviroment
+conda env remove -n myenv
+
+
+# run jupyter notebook into conda
+> jupyter notebook
+
+# in the linux, when you want deactivate base run terminal
+> conda config --set auto_activate_base false
+
+# in the linux, when you want activate base run terminal
+> conda config --set auto_activate_base true
